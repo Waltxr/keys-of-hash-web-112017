@@ -2,7 +2,7 @@ class Hash
   def keys_of(*arguments)
     key_array = []
 
-    Hash.keys.each do |keys|
+    Hash.each do |keys, values|
       if arguments.include?(key)
         key_array << key
       end
